@@ -82,6 +82,7 @@ class EloquentSettingRepository extends EloquentBaseRepository implements Settin
     {
         $setting = new $this->model();
         $setting->name = $settingName;
+        $setting->site_id = config('site')->id;
 
         if ($this->isTranslatableSetting($settingName)) {
             $setting->isTranslatable = true;
@@ -104,6 +105,7 @@ class EloquentSettingRepository extends EloquentBaseRepository implements Settin
     private function updateSetting($setting, $settingValues)
     {
         $name = $setting->name;
+        $setting->site_id = config('site')->id;
 
         if ($this->isTranslatableSetting($name)) {
             $this->setTranslatedAttributes($settingValues, $setting);

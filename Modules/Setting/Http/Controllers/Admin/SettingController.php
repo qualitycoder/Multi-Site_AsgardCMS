@@ -8,6 +8,7 @@ use Modules\Core\Traits\CanRequireAssets;
 use Modules\Setting\Http\Requests\SettingRequest;
 use Modules\Setting\Repositories\SettingRepository;
 use Nwidart\Modules\Module;
+use Modules\Site\Entities\Site;
 
 class SettingController extends AdminBaseController
 {

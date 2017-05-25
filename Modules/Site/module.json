@@ -1,0 +1,17 @@
+{
+    "name": "Site",
+    "alias": "site",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 1,
+    "providers": [
+        "Modules\\Site\\Providers\\SiteServiceProvider",
+        "Modules\\Site\\Providers\\RouteServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "macros.php"
+    ],
+    "requires": []
+}
